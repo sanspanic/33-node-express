@@ -4,7 +4,7 @@ const axios = require("axios");
 
 const fileName = process.argv[2];
 
-async function read(fileName) {
+function read(fileName) {
   fs.readFile(fileName, "utf8", function (err, data) {
     if (err) {
       // handle possible error
